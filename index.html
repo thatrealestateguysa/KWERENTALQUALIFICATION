@@ -89,8 +89,11 @@
     <form action="https://formsubmit.co/francois.muller@kwsa.co.za" method="POST">
 
         <!-- FormSubmit settings -->
-        <input type="hidden" name="_cc" value="maryna.muller@kwsa.co.za,devin.lohmann@kwsa.co.za,dawie.dutoit@kwsa.co.za">
-        <input type="hidden" name="_autoresponse" value="Thank you for your rental viewing application. We have received your details and will be in touch soon.">
+        <input type="hidden" name="_next" value="thank-you.html">
+        <input type="hidden" name="_cc" value="maryna.muller@kwsa.co.za,francois.muller@kwsa.co.za">
+        <input type="hidden" name="_autoresponse" value="Thank you. Your rental agent will be in touch shortly.">
+
+
 
         <label>Name *</label>
         <input type="text" name="Name" required>
@@ -166,6 +169,8 @@
 
         <label>9) Agent who took you to the property *</label>
         <input type="text" name="Agent Name" required>
+
+        
 
         <button type="submit">Submit</button>
 
