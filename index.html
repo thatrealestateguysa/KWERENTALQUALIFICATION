@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rental Viewing Pre-Qualification Form</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #111111;
+        margin: 0;
+        padding: 20px;
+        color: #ffffff;
+    }
+    .container {
+        max-width: 600px;
+        margin: auto;
+        background: #1a1a1a;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-top: 15px;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 8px;
+        border: 1px solid #444;
+        border-radius: 5px;
+        background: #2a2a2a;
+        color: #ffffff;
+        box-sizing: border-box;
+    }
+    input::placeholder, textarea::placeholder {
+        color: #bbbbbb;
+    }
+    button {
+        margin-top: 25px;
+        width: 100%;
+        padding: 12px;
+        background: #d40511;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #b3040e;
+    }
+    @media (max-width: 480px) {
+        body {
+            padding: 10px;
+        }
+        .container {
+            padding: 15px;
+        }
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+    <img src="assets/logo.png" alt="KW Explore Logo" style="width:100%; max-width:260px; display:block; margin:0 auto 20px auto;">
+    <h2>Rental Viewing Qualification Form</h2>
+
+    <p style="text-align:center; margin-bottom:20px; font-size:0.95rem;">
+        Kindly complete the below form to secure your booking to view the property that you wish to move into.
+    </p>
+
+    <label>Rental price of the property you want to view *</label>
+    <input type="text" name="Rental Price" required>
+
+    <label>Area of desired property *</label>
+    <input type="text" name="Area Looking In" required>
+
+    <form action="https://formsubmit.co/francois.muller@kwsa.co.za" method="POST">
+
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_cc" value="maryna.muller@kwsa.co.za,devin.lohmann@kwsa.co.za,dawie.dutoit@kwsa.co.za">
+        <input type="hidden" name="_autoresponse" value="Thank you for your rental viewing application. We have received your details and will be in touch soon.">
+
+        <label>Name *</label>
+        <input type="text" name="Name" required>
+
+        <label>Surname *</label>
+        <input type="text" name="Surname" required>
+
+        <label>Phone Number *</label>
+        <input type="text" name="Phone Number" required>
+
+        <label>Email Address *</label>
+        <input type="email" name="Email" required>
+
+        <label>1) Number of occupants that will live in the property *</label>
+        <input type="number" name="Occupants" required>
+
+        <label>2) Gross salary before deductions *</label>
+        <input type="text" name="Gross Salary" required>
+
+        <label>3) Are you a South African citizen, resident or a foreigner? *</label>
+        <select name="Resident Status" required>
+            <option value="">Select</option>
+            <option value="South African Citizen">South African Citizen</option>
+            <option value="South African Resident">South African Resident</option>
+            <option value="Foreigner">Foreigner</option>
+        </select>
+
+        <label>4) If a foreigner, is your work permit and visa valid?</label>
+        <select name="Visa Valid" required>
+            <option value="">Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label>4B) Additional Visa / Work Permit Comments</label>
+        <textarea name="Visa Comments" rows="2"></textarea>
+
+        <label>5) Any known credit problems at the Credit Bureau? *</label>
+        <select name="Credit Issues" required>
+            <option value="">Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label>5B) Credit Issue Comments</label>
+        <textarea name="Credit Issue Comments" rows="2"></textarea>
+
+        <label>6) Do you have pets? *</label>
+        <select name="Pets" required>
+            <option value="">Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label>6B) If yes, please specify type</label>
+        <select name="Pet Type">
+            <option value="">Select</option>
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+            <option value="Bird">Bird</option>
+            <option value="Reptile">Reptile</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label>6C) Size / Additional Comments</label>
+        <textarea name="Pet Size Comments" rows="2"></textarea>
+
+        <label>7) Duration of lease you are willing to sign *</label>
+        <input type="text" name="Lease Duration" required>
+
+        <label>8) Desired occupation date *</label>
+        <input type="date" name="Occupation Date" required>
+
+        <label>9) Agent who took you to the property *</label>
+        <input type="text" name="Agent Name" required>
+
+        <button type="submit">Submit</button>
+
+        <p style="margin-top:30px; font-size:0.9rem; line-height:1.4;">
+            <strong>Rental Manager</strong><br>
+            Francois Muller<br>
+            Phone: 082 440 2482<br>
+            Email: francois.muller@kwsa.co.za
+        </p>
+
+        <p style="margin-top:10px; font-size:0.9rem; line-height:1.4;">
+            <strong>Rental Administrator</strong><br>
+            Maryna Muller<br>
+            Phone: 076 892 2404<br>
+            Email: maryna.muller@kwsa.co.za
+        </p>
+
+    </form>
+</div>
+</body>
+</html>
