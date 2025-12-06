@@ -93,8 +93,6 @@
         <input type="hidden" name="_cc" value="maryna.muller@kwsa.co.za,francois.muller@kwsa.co.za">
         <input type="hidden" name="_autoresponse" value="Thank you. Your rental agent will be in touch shortly.">
 
-
-
         <label>Name *</label>
         <input type="text" name="Name" required>
 
@@ -122,7 +120,7 @@
         </select>
 
         <label>4) If a foreigner, is your work permit and visa valid?</label>
-        <select name="Visa Valid" required>
+        <select name="Visa Valid">
             <option value="">Select</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
@@ -170,8 +168,6 @@
         <label>9) Agent who took you to the property *</label>
         <input type="text" name="Agent Name" required>
 
-        
-
         <button type="submit">Submit</button>
 
         <p style="margin-top:30px; font-size:0.9rem; line-height:1.4;">
@@ -190,5 +186,25 @@
 
     </form>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var residentSelect = document.querySelector('select[name="Resident Status"]');
+        var visaSelect = document.querySelector('select[name="Visa Valid"]');
+
+        function updateVisaRequirement() {
+            if (!residentSelect || !visaSelect) return;
+            if (residentSelect.value === 'Foreigner') {
+                visaSelect.required = true;
+            } else {
+                visaSelect.required = false;
+            }
+        }
+
+        if (residentSelect) {
+            residentSelect.addEventListener('change', updateVisaRequirement);
+            updateVisaRequirement();
+        }
+    });
+</script>
 </body>
 </html>
