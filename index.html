@@ -86,12 +86,12 @@
     <label>Area of desired property *</label>
     <input type="text" name="Area Looking In" required>
 
-    <form action="https://formsubmit.co/francois.muller@kwsa.co.za" method="POST">
+    <form name="rental-viewing-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thank-you.html">
 
-        <!-- FormSubmit settings -->
-        <input type="hidden" name="_next" value="thank-you.html">
-        <input type="hidden" name="_cc" value="maryna.muller@kwsa.co.za,francois.muller@kwsa.co.za">
-        <input type="hidden" name="_autoresponse" value="Thank you. Your rental agent will be in touch shortly.">
+        <p style="display:none">
+            <label>Don’t fill this out: <input name="bot-field"></label>
+        </p>
+        <input type="hidden" name="form-name" value="rental-viewing-form">
 
         <label>Name *</label>
         <input type="text" name="Name" required>
